@@ -1,4 +1,3 @@
-init
 function run
 {
     [CmdletBinding()]
@@ -55,3 +54,8 @@ function hilfe
     Write-Host
 
 }
+
+
+
+
+init
