@@ -17,7 +17,7 @@ function init
     git clone https://github.com/bugfrei/GitProjekt
     cd GitProjekt
     git remote add github https://github.com/bugfrei/GitProjekt
-    git reset --hard 16d586f
+    git reset --hard e4b7ac3
     git push origin +main --force
     cls
     hilfe
@@ -56,7 +56,7 @@ function hilfe
     Write-Host
     Write-Host "* Bei der Initialisierung werden auch alle gepush'te commits geloescht."
     Write-Host
-    Write-Host "Version: 0.1.3" -ForegroundColor DarkGray
+    Write-Host "Version: 0.1.4" -ForegroundColor DarkGray
 
 }
 
