@@ -1,19 +1,22 @@
-function run
-{
-    [CmdletBinding()]
-    param (
-        [ValidateSet("todo", "init", "test", "hilfe")]
-        [String]
-        . $cmd
-    )
-}
-
 #TODO: Bei einer neuen Version (z.B. todo.md geändert)
 #      - Neue Versionsnummer in Funktion "hilfe" eintragen
 #      - In Git/GitProjekt/ git a, git c neueVersionsNummer, git push
 #      - Commit ID ermitteln (git l; oberstes Commit)
 #      - in der Funktion init bei git reset... diese Commit-ID eintragen/einfügen SPEICHERN!!!
 #      - auch diesen Ordner (Git/) adden, commiten, pushen
+function run
+{
+    [CmdletBinding()]
+    param (
+        [ValidateSet("todo", "init", "test", "hilfe")]
+        [String]
+        $cmd
+        
+    )
+
+    . $cmd
+}
+
 function init
 {
     cd $PSScriptRoot
