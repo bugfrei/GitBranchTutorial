@@ -4,7 +4,7 @@ function run
     param (
         [ValidateSet("todo", "init", "test", "hilfe")]
         [String]
-        $cmd
+        . $cmd
     )
 }
 
