@@ -17,7 +17,7 @@ function init
     git clone https://github.com/bugfrei/GitProjekt
     cd GitProjekt
     git remote add github https://github.com/bugfrei/GitProjekt
-    git reset --hard e4b7ac3
+    git reset --hard fd232aa
     git push origin +main --force
     cls
     hilfe
